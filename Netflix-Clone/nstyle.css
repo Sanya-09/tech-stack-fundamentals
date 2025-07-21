@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #111;
+}
+
+.logo {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.signin-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.hero {
+  background: url('https://assets.nflxext.com/ffe/siteui/vlv3/8e7f1a8d-09c1-4c2e-a6e5-355f1a61d3e2/f790cc95-c898-4eb0-8cc0-2f5660c380ef/IN-en-20230710-popsignuptwoweeks-perspective_alpha_website_small.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 90%;
+}
+
+.hero-text h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background: red;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.content-row {
+  padding: 30px;
+}
+
+.content-row h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.card-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 120px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease, z-index 0.3s;
+  z-index: 1;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.5);
+  z-index: 10;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+}
+
+/* -------------------- */
+/* 📱 Mobile Responsive */
+/* -------------------- */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero-text h2 {
+    font-size: 26px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .card {
+    width: 45%;
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    height: 150px;
+  }
+
+  .cta-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .signin-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
