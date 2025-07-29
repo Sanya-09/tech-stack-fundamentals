@@ -6,25 +6,26 @@ public class GradeCalculator extends JFrame implements ActionListener {
 
     public GradeCalculator() {
         setTitle("SGPA & CGPA Calculator");
-        setSize(300, 200);
+        setSize(400, 300);
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null); 
 
         sgpaButton = new JButton("Calculate SGPA");
-        sgpaButton.setBounds(50, 30, 200, 30);
+        sgpaButton.setBounds(50, 30, 300, 30);
         sgpaButton.addActionListener(this);
         add(sgpaButton);
 
         cgpaButton = new JButton("Calculate CGPA");
-        cgpaButton.setBounds(50, 70, 200, 30);
+        cgpaButton.setBounds(50, 70, 300, 30);
         cgpaButton.addActionListener(this);
         add(cgpaButton);
 
-        exitButton = new JButton("Exit");
-        exitButton.setBounds(50, 110, 200, 30);
-        exitButton.addActionListener(this);
-        add(exitButton);
+       exitButton = new JButton("Exit");
+       exitButton.setBounds(100, 110, 200, 30); 
+       exitButton.addActionListener(this);
+       add(exitButton);
+
 
         setVisible(true);
     }
