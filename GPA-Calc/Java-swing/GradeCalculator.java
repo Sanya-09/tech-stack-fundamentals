@@ -6,7 +6,7 @@ public class GradeCalculator extends JFrame implements ActionListener {
 
     public GradeCalculator() {
         setTitle("SGPA & CGPA Calculator");
-        setSize(400, 300);
+        setSize(400, 300); 
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null); 
