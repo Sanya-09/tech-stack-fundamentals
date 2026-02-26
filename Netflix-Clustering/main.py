@@ -10,7 +10,7 @@ import re
 
 df = pd.read_csv('netflix_titles.csv')  
 df.head()
-
+ 
 # SELECT RELEVENT FEATURE
 features = df[['Genre', 'rating', 'duration']]
 
