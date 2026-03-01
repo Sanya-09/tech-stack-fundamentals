@@ -9,7 +9,7 @@ public class GradeCalculator extends JFrame implements ActionListener {
         setSize(400, 300); 
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLocationRelativeTo(null); 
+        setLocationRelativeTo(null);  
 
         sgpaButton = new JButton("Calculate SGPA");
         sgpaButton.setBounds(50, 30, 300, 30);
